@@ -1,6 +1,6 @@
 {
   "name": "resolve-url-loader-fork-webpack2-fix",
-  "version": "1.0.0",
+  "version": "1.6.2",
   "description": "All credits go to the original library author (bholloway https://github.com/bholloway/resolve-url-loader/). The whole purpose of this fork is to fix https://github.com/bholloway/resolve-url-loader/issues/36 earlier",
   "main": "index.js",
   "repository": {
