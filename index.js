@@ -33,10 +33,13 @@ function resolveUrlLoader(content, sourceMap) {
   // details of the file being processed
   //  we would normally use compilation.getPath(options.output.path) to get the most correct outputPath,
   //  however we need to match to the sass-loader and it does not do so
-  var loader      = this,
-      filePath    = loader.context,
-      outputPath  = path.resolve(loader.options.output.path),
-      contextPath = path.resolve(loader.options.context);
+    //TODO this is the general fix for webpack2
+    //https://github.com/bholloway/resolve-url-loader/issues/36
+    //https://github.com/bholloway/resolve-url-loader/issues/33#issuecomment-249830601
+      var loader      = this,
+          filePath    = loader.context,
+          outputPath  = this._compilation.outputOptions.path,
+          contextPath = this._compilation.options.context;
 
   // prefer loader query, else options object, else default values
   var options = defaults(loaderUtils.parseQuery(loader.query), loader.options[camelcase(PACKAGE_NAME)], {

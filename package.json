@@ -1,30 +1,18 @@
 {
-  "name": "resolve-url-loader",
-  "version": "1.6.1",
-  "description": "Webpack loader that resolves relative paths in url() statements based on the original source file",
+  "name": "resolve-url-loader-fork-webpack2-fix",
+  "version": "1.0.0",
+  "description": "All credits go to the original library author (bholloway https://github.com/bholloway/resolve-url-loader/). The whole purpose of this fork is to fix https://github.com/bholloway/resolve-url-loader/issues/36 earlier",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bholloway/resolve-url-loader.git"
+    "url": "git+https://github.com/M1strall/resolve-url-loader.git"
   },
-  "keywords": [
-    "webpack",
-    "loader",
-    "css",
-    "normalize",
-    "rewrite",
-    "resolve",
-    "url",
-    "sass",
-    "relative",
-    "file"
-  ],
-  "author": "bholloway",
+  "author": "Mistrall",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bholloway/resolve-url-loader/issues"
+    "url": "https://github.com/M1strall/resolve-url-loader/issues"
   },
-  "homepage": "https://github.com/bholloway/resolve-url-loader",
+  "homepage": "https://github.com/M1strall/resolve-url-loader",
   "dependencies": {
     "camelcase": "^1.2.1",
     "convert-source-map": "^1.1.1",
